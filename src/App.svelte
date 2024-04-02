@@ -16,10 +16,6 @@
     let maxGap = pathLength - (pathLength * d3.min(numbers) / d3.max(numbers))
     let minGap = 0
 
-    // console.log("total path", pathLength)
-    // console.log("maximo gap", maxGap)
-    // console.log("minimo gap", minGap)
-
     largo = function (n) {
       let scale = d3
         .scaleLinear()
@@ -112,6 +108,8 @@ console.log(screen.width)
   z-index: 1;
   opacity: 30%;
   }
+
+  /* Diseño resposive */
   @media (min-width: 1300px) {
     .grid-item svg {
       width: 300px;
@@ -119,7 +117,7 @@ console.log(screen.width)
   }}
   @media (min-width: 1600px) {
     .title {
-      font-size: 2.75vw; /* Fixed font size for larger screens */
+      font-size: 2.75vw;
       padding-bottom: 50px;
     }
 
@@ -128,7 +126,7 @@ console.log(screen.width)
       height: auto;
     }
     .number {
-      font-size: 40px; /* Fixed font size for larger screens */
+      font-size: 40px;
     }
   }
 </style>
